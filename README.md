@@ -219,12 +219,11 @@ The experimental dataset consisted of three categories of graphs representing ci
 
 #### Comparison Operations
 
-```
-Graph Size    | Prim Comparisons | Kruskal Comparisons | Ratio
-Small (avg)   |      12.67       |        7.33         | 1.73:1
-Medium (avg)  |      61.67       |       19.67         | 3.13:1
-Large (avg)   |     179.33       |       40.00         | 4.48:1
-```
+| Graph Size    | Prim Comparisons | Kruskal Comparisons | Ratio |
+|---------------|------------------|---------------------|-------|
+| Small (avg)   |      12.67       |        7.33         | 1.73:1 |
+| Medium (avg)  |      61.67       |       19.67         | 3.13:1 |
+| Large (avg)   |     179.33       |       40.00         | 4.48:1 |
 
 **Insight:** As graphs grow, Prim performs increasingly more comparisons relative to Kruskal. This is because Prim explores all adjacent edges of visited vertices, while Kruskal only processes each edge once.
 
