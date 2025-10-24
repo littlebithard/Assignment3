@@ -47,9 +47,9 @@ public class Main {
                     System.out.println("    MST Edges: " + kruskalResult.mst.size());
 
                     if (Math.abs(primResult.totalCost - kruskalResult.totalCost) < 0.001) {
-                        System.out.println("\n  ✓ Both algorithms produce same total cost!");
+                        System.out.println("\n  Both algorithms produce same total cost!");
                     } else {
-                        System.out.println("\n  ✗ WARNING: Costs differ!");
+                        System.out.println("\n  WARNING: Costs differ!");
                     }
 
                     ResultRecord record = new ResultRecord(
@@ -62,19 +62,19 @@ public class Main {
             }
 
             JsonIO.writeResults("data_results_output.json", allResults);
-            System.out.println("✓ Results written to data_results_output.json");
+            System.out.println("Results written to data_results_output.json");
 
             CSVwriter.writeResultsToCSV("results_detailed.csv", allResults);
-            System.out.println("✓ Detailed results written to results_detailed.csv");
+            System.out.println("Detailed results written to results_detailed.csv");
 
             CSVwriter.writeComparisonToCSV("results_comparison.csv", allResults);
-            System.out.println("✓ Comparison written to results_comparison.csv");
+            System.out.println("Comparison written to results_comparison.csv");
 
             CSVwriter.writeOperationsToCSV("results_operations.csv", allResults);
-            System.out.println("✓ Operations breakdown written to results_operations.csv");
+            System.out.println("Operations breakdown written to results_operations.csv");
 
             CSVwriter.writePerformanceSummaryToCSV("results_summary.csv", allResults);
-            System.out.println("✓ Performance summary written to results_summary.csv");
+            System.out.println("Performance summary written to results_summary.csv");
 
             printSummaryTable(allResults);
 

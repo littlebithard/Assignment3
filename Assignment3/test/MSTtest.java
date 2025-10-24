@@ -30,9 +30,9 @@ public class MSTtest {
         System.out.println("Total Tests: " + (testsPassed + testsFailed));
 
         if (testsFailed == 0) {
-            System.out.println("\n✓ All tests passed!");
+            System.out.println("\n All tests passed!");
         } else {
-            System.out.println("\n✗ Some tests failed!");
+            System.out.println("\n Some tests failed!");
         }
     }
 
@@ -127,7 +127,6 @@ public class MSTtest {
             parent[a] = b;
         }
 
-        // Check connectivity
         int root = find(parent, 0);
         for (int i = 1; i < V; i++) {
             if (find(parent, i) != root) {
@@ -213,7 +212,6 @@ public class MSTtest {
         try {
             Graphs g = new Graphs(4);
             g.addEdge(new Edges(0, 1, 1.0));
-            // Vertices 2 and 3 are disconnected
 
             Prim.Result p = Prim.run(g, 0);
             Kruskal.Result k = Kruskal.run(g);
