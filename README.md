@@ -3,7 +3,7 @@
 
 ## 1. Summary of Input Data and Algorithm Results
 
-### 1.1 Input Dataset Overview
+### Input Dataset Overview
 
 The experimental dataset consisted of three categories of graphs representing city transportation networks:
 
@@ -13,7 +13,7 @@ The experimental dataset consisted of three categories of graphs representing ci
 | Medium | 3 | 10-15 | 16-28 | Performance observation |
 | Large | 3 | 20-30 | 38-50 | Scalability testing |
 
-### 1.2 Algorithm Results Summary
+### Algorithm Results Summary
 
 #### Small Graphs (Correctness Testing)
 
@@ -124,7 +124,7 @@ The experimental dataset consisted of three categories of graphs representing ci
   - Execution Time: 5 ms
   - Operations: {comparisons: 50, finds: 100, unions: 50}
 
-### 1.3 Key Observations
+### Key Observations
 
 1. **Correctness**: Both algorithms consistently produced identical MST costs across all test cases, confirming implementation correctness.
 
@@ -138,7 +138,7 @@ The experimental dataset consisted of three categories of graphs representing ci
 
 ## 2. Comparative Analysis: Prim's vs Kruskal's Algorithms
 
-### 2.1 Theoretical Complexity Analysis
+### Theoretical Complexity Analysis
 
 #### Prim's Algorithm
 
@@ -183,7 +183,7 @@ The experimental dataset consisted of three categories of graphs representing ci
 - No starting vertex needed
 - Works well with edge list representation
 
-### 2.2 Performance Comparison (In Practice)
+### Performance Comparison (In Practice)
 
 #### Small Graphs (4-6 vertices)
 
@@ -215,7 +215,7 @@ The experimental dataset consisted of three categories of graphs representing ci
 
 **Analysis:** Kruskal maintains its advantage even as graph size increases. The difference becomes more pronounced with larger graphs.
 
-### 2.3 Operation Count Analysis
+### Operation Count Analysis
 
 #### Comparison Operations
 
@@ -240,7 +240,7 @@ Large (avg)   |     179.33       |       40.00         | 4.48:1
 - Union: V-1 times (one per MST edge)
 - Both are nearly O(1) with path compression
 
-### 2.4 Graph Density Impact
+### Graph Density Impact
 
 **Graph Density:** ρ = E / (V × (V-1) / 2)
 
@@ -260,7 +260,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 2. Edge sorting is highly optimized in modern languages
 3. Priority queue decrease-key operations are expensive in practice
 
-### 2.5 Memory Usage Comparison
+### Memory Usage Comparison
 
 **Prim's Algorithm:**
 - Priority queue: O(V)
@@ -280,7 +280,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 
 ## 3. Conclusions and Recommendations
 
-### 3.1 Algorithm Selection Guidelines
+### Algorithm Selection Guidelines
 
 #### Choose **Kruskal's Algorithm** when:
 
@@ -334,7 +334,7 @@ In our tests, Kruskal performed better across all densities. This is because:
    - When MST must start from particular vertex
    - Example: Broadcasting from central node
 
-### 3.2 Implementation Complexity Comparison
+### Implementation Complexity Comparison
 
 | Aspect | Prim | Kruskal | Easier |
 |--------|------|---------|--------|
@@ -346,7 +346,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 
 **Verdict:** Kruskal is simpler to implement and understand, making it better for educational purposes and rapid prototyping.
 
-### 3.3 Practical Recommendations
+### Practical Recommendations
 
 #### For City Transportation Networks (Our Use Case):
 
@@ -377,7 +377,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 - **Choose:** Kruskal
 - **Why:** Simpler to understand and implement
 
-### 3.4 Performance Optimization Strategies
+### Performance Optimization Strategies
 
 #### For Prim's Algorithm:
 1. Use Fibonacci Heap for better decrease-key: O(1) amortized
@@ -389,7 +389,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 2. Pre-filter obviously expensive edges if upper bound known
 3. Use counting sort if edge weights are integers in small range
 
-### 3.5 Empirical Findings Summary
+### Empirical Findings Summary
 
 Based on our experimental results:
 
@@ -405,28 +405,3 @@ Based on our experimental results:
 4. **Operation Efficiency:** Kruskal performs 60-75% fewer comparisons than Prim across all graph sizes.
 
 5. **Practical Advantage:** Kruskal's simpler implementation combined with better performance makes it the preferred choice for most real-world applications.
-
-### 3.6 Final Recommendation
-
-**For the city transportation network optimization project:**
-
-**Primary Algorithm: Kruskal's Algorithm**
-
-**Justification:**
-- ✅ Superior performance in all tests (37-50% faster)
-- ✅ Simpler implementation and maintenance
-- ✅ Better suited for sparse transportation networks
-- ✅ Natural fit for edge-based cost data
-- ✅ No starting vertex constraint
-- ✅ Easier to parallelize for future scaling
-
-**Backup Algorithm: Prim's Algorithm**
-
-**Use cases:**
-- When memory is severely constrained
-- If adjacency structure already exists
-- For incremental/online updates
-- When specific root vertex required
-**Date:** October 24, 2025  
-**Course:** Data Structures and Algorithms  
-**Assignment:** MST Algorithm Implementation and Analysis
