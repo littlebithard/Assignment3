@@ -286,17 +286,14 @@ In our tests, Kruskal performed better across all densities. This is because:
 1. **Sparse Graphs (E ≈ V)**
    - Fewer edges mean faster sorting
    - Union-Find operations dominate, which are very efficient
-   - Example: Road networks, social networks
 
 2. **Edge List Representation**
    - Data is already in edge format
    - No need to build adjacency lists
-   - Example: Database queries returning edges
 
 3. **Parallel Processing Potential**
    - Edge processing can be parallelized
    - Union-Find can be made concurrent
-   - Better for distributed systems
 
 4. **No Starting Vertex Preference**
    - When any MST is acceptable
@@ -305,33 +302,27 @@ In our tests, Kruskal performed better across all densities. This is because:
 5. **Simple Implementation Needed**
    - Easier to understand and debug
    - Fewer edge cases
-   - Better for educational purposes
 
 #### Choose **Prim's Algorithm** when:
 
 1. **Dense Graphs (E ≈ V²)**
    - Theoretically similar complexity
    - Fewer edges to sort
-   - Example: Complete or near-complete graphs
 
 2. **Adjacency List/Matrix Representation**
    - Data structure already supports neighbor queries
    - No edge list construction needed
-   - Example: Pre-existing graph databases
 
 3. **Memory Constrained Environments**
    - O(V) space vs O(E + V)
    - Significant for dense graphs
-   - Example: Embedded systems
 
 4. **Incremental/Online Processing**
    - Can grow MST dynamically
    - Easier to add vertices
-   - Example: Real-time network construction
 
 5. **Specific Root Required**
    - When MST must start from particular vertex
-   - Example: Broadcasting from central node
 
 ### Implementation Complexity Comparison
 
