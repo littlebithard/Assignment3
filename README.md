@@ -5,8 +5,6 @@
 
 ### Input Dataset Overview
 
-The experimental dataset consisted of three categories of graphs representing city transportation networks:
-
 | Category | Graphs | Vertices Range | Edges Range | Purpose |
 |----------|--------|----------------|-------------|---------|
 | Small | 3 | 4-6 | 5-10 | Correctness verification |
