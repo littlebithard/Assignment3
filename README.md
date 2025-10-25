@@ -332,19 +332,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 | Code Length | ~50 lines | ~40 lines | Kruskal |
 | Debugging | Moderate | Easy | Kruskal |
 
-**Verdict:** Kruskal is simpler to implement and understand, making it better for educational purposes and rapid prototyping.
-
-### Performance Optimization Strategies
-
-#### For Prim's Algorithm:
-1. Use Fibonacci Heap for better decrease-key: O(1) amortized
-2. Lazy deletion in priority queue to avoid explicit decrease-key
-3. Start from vertex with minimum-weight edge for faster convergence
-
-#### For Kruskal's Algorithm:
-1. Use Union-Find with both path compression and union by rank
-2. Pre-filter obviously expensive edges if upper bound known
-3. Use counting sort if edge weights are integers in small range
+**Result:** Kruskal is simpler to implement and understand, making it better for educational purposes and rapid prototyping.
 
 ### Empirical Findings Summary
 
