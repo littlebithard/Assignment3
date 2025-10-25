@@ -1,0 +1,19 @@
+Graph Name,Algorithm,Comparisons,Extracts,DecreaseKeys,Finds,Unions
+Small-4vertices,Prim,10,4,4,-,-
+Small-4vertices,Kruskal,4,-,-,19,3
+Small-5vertices,Prim,14,5,4,-,-
+Small-5vertices,Kruskal,4,-,-,20,4
+Small-6vertices,Prim,20,6,8,-,-
+Small-6vertices,Kruskal,5,-,-,22,5
+Medium-10vertices,Prim,32,10,14,-,-
+Medium-10vertices,Kruskal,11,-,-,53,9
+Medium-12vertices,Prim,38,12,15,-,-
+Medium-12vertices,Kruskal,12,-,-,65,11
+Medium-15vertices-Dense,Prim,56,15,20,-,-
+Medium-15vertices-Dense,Kruskal,15,-,-,77,14
+Large-20vertices,Prim,76,20,34,-,-
+Large-20vertices,Kruskal,24,-,-,121,19
+Large-25vertices-Sparse,Prim,64,25,32,-,-
+Large-25vertices-Sparse,Kruskal,25,-,-,135,24
+Large-30vertices-Dense,Prim,100,30,47,-,-
+Large-30vertices-Dense,Kruskal,36,-,-,200,29

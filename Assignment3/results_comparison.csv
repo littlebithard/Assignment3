@@ -1,0 +1,10 @@
+Graph Name,Vertices,Edges,Prim Cost,Prim Time (ms),Kruskal Cost,Kruskal Time (ms),Cost Match,Time Difference (ms)
+Small-4vertices,4,5,19,00,5,19,00,0,YES,-5
+Small-5vertices,5,7,16,00,0,16,00,0,YES,0
+Small-6vertices,6,10,15,00,0,15,00,0,YES,0
+Medium-10vertices,10,16,36,00,0,36,00,0,YES,0
+Medium-12vertices,12,19,68,00,0,68,00,0,YES,0
+Medium-15vertices-Dense,15,28,68,00,0,68,00,0,YES,0
+Large-20vertices,20,38,282,00,0,282,00,0,YES,0
+Large-25vertices-Sparse,25,32,107,10,0,107,10,0,YES,0
+Large-30vertices-Dense,30,50,325,00,0,325,00,0,YES,0
