@@ -334,37 +334,6 @@ In our tests, Kruskal performed better across all densities. This is because:
 
 **Verdict:** Kruskal is simpler to implement and understand, making it better for educational purposes and rapid prototyping.
 
-### Practical Recommendations
-
-#### For City Transportation Networks (Our Use Case):
-
-**Recommendation: Kruskal's Algorithm**
-
-**Reasoning:**
-1. Transportation networks are typically sparse (E ≈ 2-3V)
-2. Cost data naturally comes as edge list (road connections)
-3. No specific starting district required
-4. Performance advantage confirmed in testing (37-40% faster)
-5. Simpler to explain to stakeholders
-
-#### For Different Scenarios:
-
-**Scenario 1: Real-time Network Monitoring**
-- **Choose:** Prim
-- **Why:** Can incrementally update as network changes
-
-**Scenario 2: Distributed Computing**
-- **Choose:** Kruskal
-- **Why:** Edge processing can be parallelized
-
-**Scenario 3: Memory-Critical Systems**
-- **Choose:** Prim
-- **Why:** Lower memory footprint (O(V) vs O(E+V))
-
-**Scenario 4: Academic Teaching**
-- **Choose:** Kruskal
-- **Why:** Simpler to understand and implement
-
 ### Performance Optimization Strategies
 
 #### For Prim's Algorithm:
@@ -379,7 +348,7 @@ In our tests, Kruskal performed better across all densities. This is because:
 
 ### Empirical Findings Summary
 
-Based on our experimental results:
+Based on test results:
 
 1. **Correctness:** Both algorithms are 100% reliable, always producing identical MST costs.
 
