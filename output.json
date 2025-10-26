@@ -1,0 +1,211 @@
+{
+  "results": [
+    {
+      "graphName": "Small-4vertices",
+      "vertices": 4,
+      "edges": 5,
+      "prim": {
+        "totalCost": 19.0,
+        "timeMs": 2,
+        "operations": {
+          "decreaseKeys": 4,
+          "comparisons": 10,
+          "extracts": 4
+        }
+      },
+      "kruskal": {
+        "totalCost": 19.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 3,
+          "finds": 19,
+          "comparisons": 4
+        }
+      }
+    },
+    {
+      "graphName": "Small-5vertices",
+      "vertices": 5,
+      "edges": 7,
+      "prim": {
+        "totalCost": 16.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 4,
+          "comparisons": 14,
+          "extracts": 5
+        }
+      },
+      "kruskal": {
+        "totalCost": 16.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 4,
+          "finds": 20,
+          "comparisons": 4
+        }
+      }
+    },
+    {
+      "graphName": "Small-6vertices",
+      "vertices": 6,
+      "edges": 10,
+      "prim": {
+        "totalCost": 15.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 8,
+          "comparisons": 20,
+          "extracts": 6
+        }
+      },
+      "kruskal": {
+        "totalCost": 15.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 5,
+          "finds": 22,
+          "comparisons": 5
+        }
+      }
+    },
+    {
+      "graphName": "Medium-10vertices",
+      "vertices": 10,
+      "edges": 16,
+      "prim": {
+        "totalCost": 36.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 14,
+          "comparisons": 32,
+          "extracts": 10
+        }
+      },
+      "kruskal": {
+        "totalCost": 36.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 9,
+          "finds": 53,
+          "comparisons": 11
+        }
+      }
+    },
+    {
+      "graphName": "Medium-12vertices",
+      "vertices": 12,
+      "edges": 19,
+      "prim": {
+        "totalCost": 68.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 15,
+          "comparisons": 38,
+          "extracts": 12
+        }
+      },
+      "kruskal": {
+        "totalCost": 68.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 11,
+          "finds": 65,
+          "comparisons": 12
+        }
+      }
+    },
+    {
+      "graphName": "Medium-15vertices-Dense",
+      "vertices": 15,
+      "edges": 28,
+      "prim": {
+        "totalCost": 68.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 20,
+          "comparisons": 56,
+          "extracts": 15
+        }
+      },
+      "kruskal": {
+        "totalCost": 68.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 14,
+          "finds": 77,
+          "comparisons": 15
+        }
+      }
+    },
+    {
+      "graphName": "Large-20vertices",
+      "vertices": 20,
+      "edges": 38,
+      "prim": {
+        "totalCost": 282.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 34,
+          "comparisons": 76,
+          "extracts": 20
+        }
+      },
+      "kruskal": {
+        "totalCost": 282.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 19,
+          "finds": 121,
+          "comparisons": 24
+        }
+      }
+    },
+    {
+      "graphName": "Large-25vertices-Sparse",
+      "vertices": 25,
+      "edges": 32,
+      "prim": {
+        "totalCost": 107.1,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 32,
+          "comparisons": 64,
+          "extracts": 25
+        }
+      },
+      "kruskal": {
+        "totalCost": 107.1,
+        "timeMs": 0,
+        "operations": {
+          "unions": 24,
+          "finds": 135,
+          "comparisons": 25
+        }
+      }
+    },
+    {
+      "graphName": "Large-30vertices-Dense",
+      "vertices": 30,
+      "edges": 50,
+      "prim": {
+        "totalCost": 325.0,
+        "timeMs": 0,
+        "operations": {
+          "decreaseKeys": 47,
+          "comparisons": 100,
+          "extracts": 30
+        }
+      },
+      "kruskal": {
+        "totalCost": 325.0,
+        "timeMs": 0,
+        "operations": {
+          "unions": 29,
+          "finds": 200,
+          "comparisons": 36
+        }
+      }
+    }
+  ]
+}

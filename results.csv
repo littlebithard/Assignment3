@@ -1,0 +1,10 @@
+Graph Name,Vertices,Edges,Prim Total Cost,Prim Time (ms),Prim Total Operations,Kruskal Total Cost,Kruskal Time (ms),Kruskal Total Operations,Costs Match,Faster Algorithm,Time Difference (ms)
+Small-4vertices,4,5,19,00,2,18,19,00,0,26,Yes,Kruskal,2
+Small-5vertices,5,7,16,00,0,23,16,00,0,28,Yes,Equal,0
+Small-6vertices,6,10,15,00,0,34,15,00,0,32,Yes,Equal,0
+Medium-10vertices,10,16,36,00,0,56,36,00,0,73,Yes,Equal,0
+Medium-12vertices,12,19,68,00,0,65,68,00,0,88,Yes,Equal,0
+Medium-15vertices-Dense,15,28,68,00,0,91,68,00,0,106,Yes,Equal,0
+Large-20vertices,20,38,282,00,0,130,282,00,0,164,Yes,Equal,0
+Large-25vertices-Sparse,25,32,107,10,0,121,107,10,0,184,Yes,Equal,0
+Large-30vertices-Dense,30,50,325,00,0,177,325,00,0,265,Yes,Equal,0
